@@ -1,0 +1,35 @@
+﻿@model Equipment
+
+<h3>@Model.Name Information </h3>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Department</th>
+        <th>DepartmentID</th>
+        <th>InStock</th>
+    </tr>
+
+    <tr>
+        <td>@Model.EquipmentID</td>
+        <td>@Model.Name</td>
+        <td>@Model.Price</td>
+        <td>@Model.Department</td>
+        <td>@Model.DepartmentID</td>
+        <td>@Model.InStock</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Equipment/UpdateEquipment/@Model.EquipmentID">Update</a>
+</div>
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteEquipment", "Equipment", "Post"))
+    {
+        <input type="hidden" asp-for="EquipmentID" value="@Model.EquipmentID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this item" />
+    }
+</div>

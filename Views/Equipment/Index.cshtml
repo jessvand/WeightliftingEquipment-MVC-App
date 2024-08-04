@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Equipment>
+
+<h2>Equipment</h2>
+
+  <div style="display: block">
+     <a href="/Equipment/InsertEquipment/">Create a New Item</a>
+ </div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Department</th>
+        <th>Department ID</th>
+        <th>In-Stock</th>
+    </tr>
+
+    @foreach (var equipment in @Model)
+    {
+        <tr>
+            <td><a href=/Equipment/ViewEquipment/@equipment.EquipmentID>@equipment.EquipmentID</a></td>
+            <td>@equipment.Name</td>
+            <td>@equipment.Price</td>
+            <td>@equipment.Department</td>
+            <td>@equipment.DepartmentID</td>
+            <td>@equipment.InStock</td>
+            
+        </tr>
+    }
+
+</table>

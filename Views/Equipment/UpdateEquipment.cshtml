@@ -1,0 +1,16 @@
+﻿@model Equipment
+
+<h2> Update @Model.Name</h2>
+
+@using (Html.BeginForm("UpdateEquipmentToDatabase", "Equipment", "Post"))
+{
+    <input asp-for="EquipmentID" type="hidden" value="@Model.EquipmentID" />
+
+    <label asp-for="Name" class="control-label">Name</label>
+    <input type="text" name="Name" class="form-control" value="@Model.Name" />
+
+    <label asp-for="Price" class="control-label">Price</label>
+    <input type="number" step="0.01" name="Price" class="form-control" value="@Model.Price" />
+
+    <input type="submit" value="Update Item" class="btn btn-primary" />
+}

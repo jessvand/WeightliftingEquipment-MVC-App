@@ -1,0 +1,16 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 70vh; /* Full viewport height */
+}
+
+.centered-image {
+    width: 400px; /* Desired width */
+    height: auto; /* Maintains aspect ratio */
+}

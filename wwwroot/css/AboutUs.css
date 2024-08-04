@@ -1,0 +1,22 @@
+﻿/* Ensure the body has some margin and padding */
+body {
+    margin: 20;
+    font-family: Arial, sans-serif;
+}
+
+.media-container {
+    display: flex;
+    align-items: left; /* Vertically centers the items */
+    gap: 18px; /* Optional: space between the image and the text */
+    padding: 18px;
+}
+
+.media-image img {
+    max-width: 98%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline spacing */
+}
+
+.media-text {
+    max-width: 50%; /* Ensure the text container does not exceed its parent */
+}
