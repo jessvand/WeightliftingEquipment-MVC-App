@@ -1,4 +1,4 @@
-Welcome to the Weightlifting Equipment MVC CRUD App! This project is a web application designed to help weightlifters and gym enthusiasts manage their weightlifting equipment. It allows users to create, read, update, and delete records for various types of weightlifting gear.
+Welcome to the Weightlifting Equipment App! This project is a web application designed to help weightlifters and gym enthusiasts manage their weightlifting equipment. It allows users to create, read, update, and delete records for various types of weightlifting gear.
 
 
 Features
